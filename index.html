@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pet veet -Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://img.icons8.com/?size=100&id=kJyQMahYDnz4&format=png&color=F25081"
+        type="image/x-icon">
+    <style>
+        header {
+            background-image: url(img/bg_1.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .fa-brands {
+            font-size: 20px;
+            padding: 5px;
+            background-color: white;
+            border-radius: 40px;
+            color: black;
+        }
+
+        .fa-brands:hover {
+            background-color: rgba(252, 3, 157, 0.932);
+            color: white;
+        }
+
+        .navdiv>p {
+            font-size: 12px;
+        }
+
+        .span {
+            font-size: 20px;
+            color: rgba(252, 3, 157, 0.932);
+        }
+
+        .li:hover {
+            text-decoration: overline 2px rgba(252, 3, 157, 0.932);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .btu>button {
+            background-color: rgba(252, 3, 157, 0.932);
+            border: none;
+            color: white;
+            border-radius: 7px;
+
+        }
+
+        .btu>button:hover {
+            background-color: white;
+            color: rgba(252, 3, 157, 0.932);
+            border: 2px solid rgba(252, 3, 157, 0.932);
+        }
+
+        .h1 {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        .p {
+            width: 47%;
+            color: rgb(124, 124, 124);
+            font-size: large;
+            padding-top: 10px;
+        }
+
+        .bte {
+            background-color: rgba(252, 3, 157, 0.932);
+            border: none;
+            color: white;
+            font-size: medium;
+            border-radius: 7px;
+
+        }
+
+        .bte:hover {
+            background-color: rgb(255, 255, 255);
+            color: rgba(252, 3, 157, 0.932);
+            border: 2px solid rgba(252, 3, 157, 0.932);
+        }
+
+        .btr {
+            border: none;
+            color: white;
+            border-radius: 7px;
+            font-size: medium;
+            background-color: rgb(150, 224, 39);
+        }
+
+        .btr:hover {
+            border: 2px solid rgb(150, 224, 39);
+            background-color: white;
+            color: rgb(150, 224, 39);
+        }
+
+        span {
+            color: gray;
+            font-size: medium;
+            font-weight: lighter;
+        }
+
+        #one {
+            margin-left: 120px;
+            position: absolute;
+            bottom: -100px;
+
+        }
+
+        .img-fluid {
+            margin-left: 80px;
+            height: 590px;
+            width: 450px;
+            margin-top: 180px;
+        }
+
+        .fw-medium {
+            color: gray;
+            font-size: large;
+            font-weight: lighter !important;
+        }
+
+        .tu {
+            margin-top: 250px;
+        }
+
+        .mu {
+            color: rgba(252, 3, 157, 0.932);
+        }
+
+        .up {
+            margin-left: 50px;
+            padding-left: 50px;
+            /* size: 50px; */
+        }
+
+        .bg {
+            margin-top: 50px;
+            background-image: url(img/bg_3.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            height: 600px;
+        }
+
+        .ug {
+            background-color: rgba(252, 3, 157, 0.651);
+            width: 100%;
+            height: 600px;
+        }
+
+
+
+        .mid-5>h1 {
+            color: rgba(252, 3, 157, 0.932);
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 46px;
+            padding-top: 40px;
+        }
+
+        .mid-5>p {
+            color: rgb(161, 160, 160);
+            text-align: center;
+        }
+
+        .mid-flex {
+            display: flex;
+            justify-content: space-around;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-top: 30px;
+            width: 100%;
+            height: 400px;
+
+        }
+
+        .card1 {
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            height: 300px;
+            width: 300px;
+        }
+
+        .card1>h1 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: x-large;
+            color: black;
+        }
+
+        .card1>P {
+            text-align: center;
+            color: rgba(252, 3, 157, 0.932);
+        }
+
+        .card1>img {
+            margin-top: 20px;
+            height: 100px;
+            border-radius: 100px;
+            margin-left: 100px;
+        }
+
+        .icon {
+            margin-left: 80px;
+        }
+
+        .fa-brands {
+            padding: 8px;
+            background-color: rgba(252, 3, 157, 0.932);
+            color: white;
+            border-radius: 7px;
+            cursor: pointer;
+            /* font-size: large; */
+        }
+
+        .fa-brands:hover {
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(150, 224, 39);
+            color: rgb(150, 224, 39);
+        }
+
+        .footer {
+            background-color: #333;
+            display: flex;
+            justify-content: space-around;
+            padding-right: 200px;
+            height: 400px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .about>h3 {
+            margin-left: 100px;
+            padding-top: 80px;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            color: rgba(252, 3, 157, 0.932);
+
+        }
+
+        .about>p {
+            margin-left: 100px;
+            padding-top: 10px;
+            color: gray;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            width: 350px;
+
+        }
+
+        .features>h2 {
+            padding-top: 80px;
+            font-weight: bold;
+            padding-right: 50px;
+            font-size: 20px;
+            font-weight: 400;
+            color: rgba(252, 3, 157, 0.932);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 29px;
+            font-weight: 600;
+
+        }
+
+        .features>li {
+            text-transform: capitalize;
+            list-style-type: none;
+            margin-top: 2px;
+            margin-left: 3px;
+            color: rgb(124, 124, 124);
+        }
+
+        .follow {
+            color: rgba(252, 3, 157, 0.932);
+            padding-top: 80px;
+            font-size: 29px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            padding-bottom: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navdiv container d-flex justify-content-between pt-3">
+                <p class="fw-semibold">Phone no: +00 1234 567 or email us: emailsample@email.com</p>
+                <div>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-discord"></i>
+                </div>
+            </div>
+            <div class="container bg-white mt-2 d-flex h-25 align-items-center">
+                <img src="https://img.icons8.com/?size=100&id=kJyQMahYDnz4&format=png&color=F25081" alt="" width="60px">
+                <h3 class="pt-2 ps-2 fw-bold pe-5">Petvet<br><span class="span">Petcare</span></h3>
+                <div>
+                    <ul class="d-flex gap-5 mt-4 ps-5 list-unstyled fw-semibold fs-6 ">
+                        <li class="li">Home</li>
+                        <li class="li">About</li>
+                        <li class="li">Groomers</li>
+                        <li class="li">Blog</li>
+                        <li class="li">Pricing</li>
+                        <li class="li">Services</li>
+                        <li class="li">Contact</li>
+                    </ul>
+                </div>
+                <div class="btu">
+                    <button class="mt-2 ms-5 p-2 fw-semibold">Free Consulation</button>
+                </div>
+            </div>
+        </nav>
+        <div class="container mt-4 pt-5">
+            <h1 class="h1">The Kind of Care <br> Your Pets Deserve</h1>
+            <p class="p">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                live the blind texts. Separated they live in Bookmarksgrove.</p>
+            <button class="bte p-3 mt-3 fw-semibold">Make An Appointment</button>
+            <button class="p-3 fw-semibold btr">11-234-5678-9102</button>
+        </div>
+    </header>
+    <div class="bg-light h-75 ">
+        <div class="container d-flex  " id="one">
+            <div class="bg-white d-flex p-4  " id="two">
+                <img src="https://img.icons8.com/?size=100&id=101729&format=png&color=F25081" alt="">
+                <div class="pt-3">
+                    <h4 class="fw-bold">Veterinary Service <br><span>
+                            <p class="pt-2">Far far away, behind the <br> word mountains.</p>
+                        </span></h4>
+                </div>
+            </div>
+            <div class="bg-white d-flex p-4 ms-5 ">
+                <img src="https://img.icons8.com/?size=100&id=jwQfzT7L2Rni&format=png&color=F25081" alt="" width="90px"
+                    class="me-2">
+                <div class="pt-3">
+                    <h4 class="fw-bold">Pet Grooming <br><span>
+                            <p class="pt-2">Far far away, behind the <br> word mountains.</p>
+                        </span></h4>
+                </div>
+            </div>
+            <div class="bg-white d-flex p-4 ms-5">
+                <img src="https://img.icons8.com/?size=100&id=Q09MCc3whM5v&format=png&color=F25081" alt="" width="90px"
+                    class="me-3">
+                <div class="pt-3">
+                    <h4 class="fw-bold">Pet Setting <br><span>
+                            <p class="pt-2">Far far away, behind the <br> word mountains.</p>
+                        </span></h4>
+                </div>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/about.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-5">
+                    <div class="mb-4 tu">
+                        <h5 class="ms-5 fw-bold mu">Welcome to Petvet</h5>
+                        <h1 class="h3 mb-4  ms-5 fs-1 fw-bold ">We Are Best Agency
+                            For Your Pets</h1>
+                        <p class="ms-5 fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora
+                            cumque eligendi in
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora
+                            cumque eligendi in
+                            nostrum labore omnis quaerat.</p>
+
+                    </div>
+                    <div class="mb-4 ms-5">
+                        <ul class="list-unstyled fw-bold">
+                            <li><img src="https://img.icons8.com/?size=100&id=14098&format=png&color=F25081" alt=""
+                                    height="30px"> Officia quaerat eaque neque</li>
+                            <li><img src="https://img.icons8.com/?size=100&id=14098&format=png&color=F25081" alt=""
+                                    height="30px"> Possimus aut consequuntur incidunt</li>
+                            <li><img src="https://img.icons8.com/?size=100&id=14098&format=png&color=F25081" alt=""
+                                    height="30px"> Lorem ipsum dolor sit amet</li>
+                            <li><img src="https://img.icons8.com/?size=100&id=14098&format=png&color=F25081" alt=""
+                                    height="30px"> Consectetur adipisicing elit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="ms-5 fw-bold mu text-center mt-5">Make An Appointment</h4>
+        <div class="container mt-5 up">
+            <input type="text" class="p-2 ps-2" placeholder="First Name">
+            <input type="text" class="p-2 ms-4" placeholder="Last Name">
+            <select name="" id="" class="p-2 ms-4">
+                <option value="" class="p-2 ">Select Your Services</option>
+                <option value="">Pet Adoption</option>
+                <option value="">Pet Grooming</option>
+                <option value="">Vaccination</option>
+                <option value="">Dog Training</option>
+                <option value="">Pet Daycare</option>
+                <option value="">Pet Sitter</option>
+                <option value="">Veterinary Help</option>
+                <option value="">Other Services</option>
+            </select>
+            <input type="number" class="p-2 ms-4" placeholder="Phone"><br>
+            <input type="date" class="p-2 ms-5 mt-4" placeholder="Date">
+            <input type="time" class="p-2 ms-4" placeholder="Time">
+            <input type="text" class="p-2 ms-4" placeholder="Message">
+            <button class="btr p-2 ms-4">Appointment</button>
+        </div>
+    </div>
+    <div class="mid-5 bg-light text-white mt-5">
+        <h1>Our Groomers</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere at <br> delectus laudantium, deserunt, atque
+            eveniet. Voluptatem, fuga quos rerum inventore.</p>
+        <div class="mid-flex bg-light">
+            <div class="mid-card">
+                <div class="card1">
+                    <img src="img/doc-1.jpg" alt="">
+                    <h1>Lloyd Wilson</h1>
+                    <p>CEO, Founder</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-card">
+                <div class="card1">
+                    <img src="img/doc-2.jpg" alt="">
+                    <h1>Rachel Parker</h1>
+                    <p>Trainer</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="mid-card">
+                <div class="card1">
+                    <img src="img/doc-3.jpg" alt="">
+                    <h1>Ian Smith</h1>
+                    <p>Groomer</p>
+                    <div class="icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-google"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg">
+        <div class="ug text-center text-white pt-5">
+            <h4>Read testimonials</h4>
+            <h2>happy Customers Says</h2>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer bg-light">
+            <div class="about">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam
+                    voluptatum
+                    autem. Amet aliquid nesciunt veritatis aliquam.</p>
+            </div>
+            <div class="features">
+                <h2> Features</h2>
+                <li>about</li>
+                <li>Press Releases</li>
+                <li>Testimonials</li>
+                <li>Terms of Service</li>
+                <li>Privacy</li>
+                <li>Contact Us</li>
+
+                </ul>
+            </div>
+            <div>
+                <h2 class="follow">Follow</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
